@@ -16,3 +16,4 @@ The buildpack will detect your app as ASP.NET Core if it has `project.json`. If 
 ## Attension
 1. You should configure a unique compatible framework in `project.json`.
 2. Your Project should use `Microsoft.Extensions.Configuration.CommandLine` package.
+3. Your MVC App dll name in the bin directory is the same as its parent folder or set the buildOptions.outputName property in projects.json to set it to something different.
